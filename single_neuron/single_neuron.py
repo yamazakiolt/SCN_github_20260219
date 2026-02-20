@@ -65,15 +65,25 @@ for cell_index in range(cells_num):
         vip_weights.append(vip_core)
 gaba_matrix = np.zeros((cells_num, cells_num))
 
-L_phase = 12
-D_phase = 12
-L_max = 0
-L_min = 0
-k_light = 12
-k_dark = 12
-LD_start = 0
-LD_end = 0
-light_func_args = (L_phase, D_phase, L_max, L_min, k_light, k_dark, LD_start, LD_end)
+LD_params = {
+    "L_phase": 12,
+    "D_phase": 12,
+    "L_max": 0,
+    "L_min": 0,
+    "k_light": 12,
+    "k_dark": 12,
+    "LD_time": [0, 0],
+}
+light_func_args = (
+    LD_params["L_phase"],
+    LD_params["D_phase"],
+    LD_params["L_max"],
+    LD_params["L_min"],
+    LD_params["k_light"],
+    LD_params["k_dark"],
+    LD_params["LD_time"][0],
+    LD_params["LD_time"][1],
+)
 
 
 # 微分方程式の計算
