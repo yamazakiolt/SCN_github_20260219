@@ -14,5 +14,8 @@
 3. "results"フォルダが生成され、"Figure3_3.png"と"Figure3_4.png"が生成されます。
 ## Figure3.5, Figure3.6
 1. "light"へ移動します。
-2. "phase_shift.py"を実行すると"results"が作成され、"Figure3_5.png"が作成されます。
-3. "light.py"を実行すると"results"が作成され、"Figure3_6(a).png"と"Figure3_6(b)(c).png"が作成されます。
+2. "phase_shift.py"を実行すると"results"が作成され、"Figure3_5.png"が生成されます。
+3. "light.py"を実行すると"results"が作成され、"Figure3_6(a).png"と"Figure3_6(b)(c).png"が生成されます。
+## Figure3.7
+1. "vip"へ移動します。
+2. "Figure3_7.py"を実行すると"results"が作成され、"Figure3_7.png"が生成されます。
