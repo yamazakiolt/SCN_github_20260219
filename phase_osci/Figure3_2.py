@@ -65,6 +65,6 @@ for index, T_light in enumerate([10, 16, 24, 32]):
 fig.legend(
     handles=legend_elements, loc="upper right", ncol=1, frameon=False, fontsize=12
 )
-fig.savefig("./phase_osci_LSA_resultsFigure3_2.png")
+fig.savefig("./phase_osci_LSA_results/Figure3_2.png")
 ##############################################################################################
 # %%

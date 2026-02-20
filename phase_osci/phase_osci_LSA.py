@@ -5,7 +5,7 @@ import json
 import os
 
 # %%
-os.makedirs("./phase_osci_LSA_result", exist_ok=True)
+os.makedirs("./phase_osci_LSA_results", exist_ok=True)
 
 # %%
 plt.rcParams.update(
