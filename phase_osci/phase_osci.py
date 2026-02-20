@@ -1,5 +1,5 @@
 # Figure3.1のデータを作成する
-# phase_osci_resultが作成され、そこに位相の時間変化が保存される
+# phase_osci_resultsが作成され、そこに位相の時間変化が保存される
 # %%
 import numpy as np
 from scipy.integrate import solve_ivp
@@ -7,7 +7,7 @@ import json
 import os
 
 # %%
-os.makedirs("./phase_osci_result", exist_ok=True)
+os.makedirs("./phase_osci_results", exist_ok=True)
 # %%
 
 
@@ -75,13 +75,13 @@ for T_light in [10, 16, 24, 32]:
             list_L.append(list_sparse(ΦL, 1000))
             list_S.append(list_sparse(ΦS, 1000))
 
-    with open(f"./phase_osci_result/params_{T_light}.json", "w") as f:
+    with open(f"./phase_osci_results/params_{T_light}.json", "w") as f:
         json.dump(params, f, indent=4)
-    with open(f"./phase_osci_result/C_{T_light}.json", "w") as f:
+    with open(f"./phase_osci_results/C_{T_light}.json", "w") as f:
         json.dump(list_C, f, indent=4)
-    with open(f"./phase_osci_result/L_{T_light}.json", "w") as f:
+    with open(f"./phase_osci_results/L_{T_light}.json", "w") as f:
         json.dump(list_L, f, indent=4)
-    with open(f"./phase_osci_result/S_{T_light}.json", "w") as f:
+    with open(f"./phase_osci_results/S_{T_light}.json", "w") as f:
         json.dump(list_S, f, indent=4)
 
 # %%

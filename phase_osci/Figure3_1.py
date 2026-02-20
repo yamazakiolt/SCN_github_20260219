@@ -1,5 +1,5 @@
 # Figure3.1作成プログラム
-# phase_osci.pyにより作成されたphase_osci_resultを読み込んでFigure3.1を作成する
+# phase_osci.pyにより作成されたphase_osci_resultsを読み込んでFigure3.1を作成する
 # %%
 from matplotlib.lines import Line2D
 import json
@@ -87,13 +87,13 @@ fig.legend(
 for index, LD_phase in enumerate(LD_list):
     ax = axes[index // 2, index % 2]
     print(LD_phase)
-    with open(f"./phase_osci_result/C_{LD_phase}.json", "r") as f:
+    with open(f"./phase_osci_results/C_{LD_phase}.json", "r") as f:
         C_phase = json.load(f)
-    with open(f"./phase_osci_result/S_{LD_phase}.json", "r") as f:
+    with open(f"./phase_osci_results/S_{LD_phase}.json", "r") as f:
         S_phase = json.load(f)
-    with open(f"./phase_osci_result/L_{LD_phase}.json", "r") as f:
+    with open(f"./phase_osci_results/L_{LD_phase}.json", "r") as f:
         L_phase = json.load(f)
-    with open(f"./phase_osci_result/params_{LD_phase}.json", "r") as f:
+    with open(f"./phase_osci_results/params_{LD_phase}.json", "r") as f:
         params = json.load(f)
 
     for i in range(len(params)):
@@ -109,6 +109,6 @@ fig.supylabel(r"$\kappa_{CS}$", fontsize=30)
 fig.legend(
     handles=legend_elements, loc="upper right", ncol=1, frameon=False, fontsize=12
 )
-fig.savefig("./phase_osci_result/Figure3_1.png")
+fig.savefig("./phase_osci_results/Figure3_1.png")
 plt.show()
 # %%

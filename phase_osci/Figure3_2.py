@@ -25,9 +25,9 @@ legend_elements = [
     ),
 ]
 # %%
-with open("./phase_osci_LSA_result/params.json", "r") as f:
+with open("./phase_osci_LSA_results/params.json", "r") as f:
     params = json.load(f)
-with open("./phase_osci_LSA_result/entrainment.json", "r") as f:
+with open("./phase_osci_LSA_results/entrainment.json", "r") as f:
     judge_entrainment = json.load(f)
 
 
@@ -65,6 +65,6 @@ for index, T_light in enumerate([10, 16, 24, 32]):
 fig.legend(
     handles=legend_elements, loc="upper right", ncol=1, frameon=False, fontsize=12
 )
-fig.savefig("./phase_osci_LSA_result/Figure3_2.png")
+fig.savefig("./phase_osci_LSA_resultsFigure3_2.png")
 ##############################################################################################
 # %%

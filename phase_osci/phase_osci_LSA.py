@@ -42,9 +42,9 @@ for T_light in [10, 16, 24, 32]:
             judge_entrainment.append(ans)
 
 
-with open("./phase_osci_LSA_result/params.json", "w") as f:
+with open("./phase_osci_LSA_results/params.json", "w") as f:
     json.dump(params, f, indent=4)
-with open("./phase_osci_LSA_result/entrainment.json", "w") as f:
+with open("./phase_osci_LSA_results/entrainment.json", "w") as f:
     json.dump(judge_entrainment, f, indent=4)
 
 
