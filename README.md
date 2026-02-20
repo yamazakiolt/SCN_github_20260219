@@ -5,5 +5,5 @@
 論文のFigureの作成方法を以下に説明します
 ## Figure3.1, Figure3.2
 1. "phase_osci"内で"phase_osci.py"と"phase_osci_LSA.py"を実行します
-2. "phase_osci_result"と"phase_osci_result_LSA"が作成されます。
-3. "Figure3_1.py"と"Figure3_2.py"を実行します。
+2. "phase_osci_result"と"phase_osci_LSA_result"が作成されます。
+3. "Figure3_1.py"と"Figure3_2.py"を実行します。"phase_osci_result"内にFigure3_1.pngが、"phase_osci_LSA_result"内に"Figure3_2.png"が生成されます。
