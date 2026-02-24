@@ -10,25 +10,6 @@ import os
 np.random.seed(222)
 # %%
 os.makedirs("./results", exist_ok=True)
-# %%
-
-
-def draw_light_background(
-    ax, t_eval, light_wave, threshold=0.1, color="yellow", alpha=0.2
-):
-    """light_waveがthreshold以上の区間に背景を描く"""
-    in_light = False
-    for i in range(1, len(t_eval)):
-        if light_wave[i - 1] < threshold and light_wave[i] >= threshold:
-            start = t_eval[i]
-            in_light = True
-        elif light_wave[i - 1] >= threshold and light_wave[i] < threshold and in_light:
-            end = t_eval[i]
-            ax.axvspan(start, end, color=color, alpha=alpha)
-            in_light = False
-    # 光が終わらずに最後まで続いた場合
-    if in_light:
-        ax.axvspan(start, t_eval[-1], color=color, alpha=alpha)
 
 
 plt.rcParams.update(
