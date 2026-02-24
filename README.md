@@ -2,7 +2,7 @@
 このプログラムは
 ### 抑制性神経伝達物質が概日時計の光同調と履歴効果に及ぼす影響の数理解析
 のFigure作成用プログラムです。
-論文のFigureの作成方法を以下に説明します。
+論文Figureの作成方法を以下に説明します。
 ## Figure3.1, Figure3.2
 1. "phase_osci"へ移動します。
 2. "phase_osci.py"と"phase_osci_LSA.py"を実行します
@@ -19,3 +19,7 @@
 ## Figure3.7
 1. "vip"へ移動します。
 2. "Figure3_7.py"を実行すると"results"が作成され、"Figure3_7.png"が生成されます。
+## Figure3.10
+1. "GABA_coreshell"へ移動します。
+2. "Figure3_10.py"を実行すると"results"が作成され、"Figure3_10_(a)_(b).png"と"Figure3_10_(c)_(d).png"が生成されます。
+3. "Figure3_10_2.py"を実行すると"results"が作成され、"Figure3_10_(e)_(f)_(g).png"が生成されます。
