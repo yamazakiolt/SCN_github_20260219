@@ -19,6 +19,11 @@
 ## Figure3.7
 1. "vip"へ移動します。
 2. "Figure3_7.py"を実行すると"results"が作成され、"Figure3_7.png"が生成されます。
+## Figure3.8
+1. "vip"へ移動します。
+2. "calc_phase"を実行してください。"phase_initial_conditions.json"が作成されます。
+3. "ode_multicell.py"を実行してください。"results/multicell/20"が作成され、VIPの強度による発火頻度の時間変化がcsvファイルとして作成されます。サイズが数百MBに及ぶため注意してください。
+4. Figure3_8.pyを実行するとresults.pyの中に"Figure3_8.png"が生成されます。
 ## Figure3.10
 1. "GABA_coreshell"へ移動します。
 2. "Figure3_10.py"を実行すると"results"が作成され、"Figure3_10_(a)_(b).png"と"Figure3_10_(c)_(d).png"が生成されます。
