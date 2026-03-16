@@ -325,8 +325,8 @@ fig_ab.legend(loc="upper right", fontsize=20, handlelength=4)
 fig_cd.legend(loc="upper right", fontsize=20, handlelength=4)
 
 os.makedirs("results", exist_ok=True)
-fig_ab.savefig("./results/Fig3_10(a)(b).png")
-fig_cd.savefig("./results/Fig3_10(c)(d).png")
+fig_ab.savefig("./results/Figure3_10(a)(b).png")
+fig_cd.savefig("./results/Figure3_10(c)(d).png")
 plt.show()
 
 # %%

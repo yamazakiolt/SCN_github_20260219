@@ -28,6 +28,5 @@
 1. "vip"へ移動します。
 2. "Figure3_9.py"を実行すると、"results"内に"Figure3_9.png"が作成されます。
 ## Figure3.10
-1. "GABA_coreshell"へ移動します。
-2. "Figure3_10.py"を実行すると"results"が作成され、"Figure3_10_(a)_(b).png"と"Figure3_10_(c)_(d).png"が生成されます。
-3. "Figure3_10_2.py"を実行すると"results"が作成され、"Figure3_10_(e)_(f)_(g).png"が生成されます。
+1. "vip"へ移動します。
+2. "Figure3_10.py"を実行すると、"results"内に"Figure3_10(a)(b).png", "Figure3_10(c)(d).png", "Figure3_10(e)(f)(g).png"が作成されます。
